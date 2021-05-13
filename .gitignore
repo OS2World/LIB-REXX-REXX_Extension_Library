@@ -1,0 +1,12 @@
+*.zip
+*.ZIP
+*.tmp
+*.TMP
+*.obj
+*.OBJ
+*.map
+*.MAP
+*.dll
+*.DLL
+*.bak
+*.BAK

@@ -1,0 +1,52 @@
+2004-07-26
+
+	SearchPath function added
+
+2004-07-18
+
+	Generate automatically the Readme file
+
+2004-07-12
+
+	Added Buildlevel
+
+2004-07-09
+
+	Added MakePath and Deltree, started documentation
+	Link with VAC 3.6
+
+2004-07-07
+
+	Modified test of the options, so partial strings work as well
+
+2004-04-16
+
+	LGPL license added
+	Return version number
+
+2004-04-06
+
+	Made all version compile from same source
+	Changed return codes to 0/1
+	Extended parameters to full words
+
+2004-01-19
+
+	Added rxstring.h with prototypes for rxstring.lib
+	Fixed crash in second session
+	Link with system C runtime
+
+2004-01-18
+
+	Added QuerySwitchList, CloseObject
+
+2002-12-19
+
+	Added function eCSCopy
+	Added load/unload functions
+	Renamed functions Rexx* eCS*
+
+2002-12-17
+
+	Initial version
+

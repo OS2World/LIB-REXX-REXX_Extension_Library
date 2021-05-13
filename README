@@ -1,0 +1,54 @@
+REXXLIB.DLL - Function summary
+Author: D.J. van Enckevort
+
+rc=REXXLIBLoadFuncs([version])
+[version]	name of the variable to store the version number in
+
+rc=REXXLIBDropFuncs()
+
+rc=REXXLIBStartProgramme(<programme>, [parameters], [environment], [starttype], [startfocus], [startoptions], [cause])
+<programme>	Programme file
+[parameters]	Parameters for the programme
+[environment]	Environment variables separated by a |
+[starttype]	OS2F(ULL)|OS2W(IN)|OS2P(M)|DOSF(ULL)|DOSW(IN)|DE(FAULT)
+[startfocus]	F(OREGROUND)|B(ACKGROUND)
+[startoptions]	P(ARENT)|S(HELL)
+[cause]		Name of the variable to return the failure cause in
+
+rc=REXXLIBCopy(<source>, <target>, [options], [cause])
+<file>		A file
+[options]	A(PPEND)|R(EPLACE)|F(AIL)
+[cause]		Name of the variable to return the failure cause in
+
+rc=REXXLIBDelete(<file>, [force], [recoverable], [cause])
+<file>		A file
+[force]		F(ORCE)|N(OFORCE)
+[recoverable]	R(ECOVERABLE)|N(OTRECOVERABLE)
+[cause]		Name of the variable to return the failure cause in
+
+rc=REXXLIBCloseObject(<title>)
+<title>		Title of the object in the switchlist
+
+rc=REXXLIBQuerySwitchList(<variable>)
+<variable>	Name of the variable to use as stem to return the switchlist
+
+rc=REXXLIBDelTree(<file>, [force], [cause])
+<file>		File to delete
+[force]		F(ORCE)|N(OFORCE)
+[cause]		Name of the variable to return the failure cause in
+
+rc=REXXLIBMakePath(<path>, [cause])
+<path>		Path to create, either relative or absolute
+[cause]		Name of the variable to return the failure cause in
+
+Return code is always 0 (FALSE) or 1 (TRUE)
+[cause] is only set if the return code is false
+
+rc=REXXLIBSearchPath(<path>, <file>, <variable>, [option])
+<path>		Path to search, either a environment variable, or a semicolon separated list of directories
+<file>		File to search for
+<var>		Result - Fully qualified filename, or failure cause
+[option]	E(NVIRONMENT)|P(ATH)
+
+Return code is always 0 (FALSE) or 1 (TRUE)
+[cause] is only set if the return code is false
